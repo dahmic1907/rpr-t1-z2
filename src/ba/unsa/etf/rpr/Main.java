@@ -1,5 +1,6 @@
 package ba.unsa.etf.rpr;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -18,6 +19,7 @@ public class Main {
         System.out.println("Unesite broj n: ");
         Scanner in =  new Scanner(System.in);
         int n = in.nextInt();
+        System.out.println("To su brojevi: ");
         for(int i = 2; i < n; i++){
             if(i % sumaCifara(i) == 0){
                 System.out.println(i);
